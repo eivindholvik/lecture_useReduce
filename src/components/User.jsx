@@ -3,10 +3,7 @@ import { ACTIONS } from "./Event";
 function User({ user, dispatch }) {
   console.log("hei");
   return (
-    <div
-      className="user"
-      style={user.showed ? { color: "red" } : { color: "lightgrey" }}
-    >
+    <div className="user" style={{ color: user.showed ? "red" : "lightgrey" }}>
       <span>{user.userName}</span>
       <button
         className="showed"
